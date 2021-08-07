@@ -8,6 +8,7 @@ public class Clientes {
 
     @Id
     //@Column(name="Id") //no necesaria ya que coinciden los nombres exactamente de la tabla con los campos. Si no coincidiesen (alguna mayúscula por ejemplo) entonces pondríamos las anotaciones column.
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private int id;
 
     //@Column(name="Nombre_del_campo_en_BD_si_no_coincide")

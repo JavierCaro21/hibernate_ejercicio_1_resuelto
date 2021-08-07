@@ -51,3 +51,11 @@ Ahora crearemos una tabla y añadiremos datos a ella desde nuestra aplicación
 
       select * from clientes;
 
+
+## 3 - Leer datos de la base de datos
+
+ - Añadimos que imprima el id y veremos que siempre es 0
+ - Hay que añadir al id para que lo lea
+   - @GeneratedValue(strategy = GenerationType.IDENTITY)
+   - Ahora ya recupera el id que acabamos de insertar
+ - Creamos una clase similar a guardaCliente pero esta vez que lea
