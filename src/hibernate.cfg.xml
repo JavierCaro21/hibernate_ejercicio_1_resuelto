@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-configuration PUBLIC "-//Hibernate/Hibernate Configuration DTD 3.0//EN" "http://www.hibernate.org/dtd/hibernate-configuration-3.0.dtd">
+<hibernate-configuration>
+ <session-factory>
+     <!-- Configurar cuatro elementos sobre la conexión de la base de datos: driverClass url nombre de usuario contraseña -->
+     <property name="connection.driver_class">com.mysql.jdbc.Driver</property>
+     <property name="connection.url">jdbc:mysql://localhost:3306/pruebas_hibernate?useSSL=false</property>
+     <property name="connection.username">root</property>
+     <property name="connection.password">root</property>
+     <!-- El dialecto -->
+     <property name="dialect">org.hibernate.dialect.MySQL5Dialect</property>
+     <!-- Se puede mostrar la instrucción SQL enviada a la base de datos -->
+     <property name="hibernate.show_sql">true</property>
+     <!-- Formatear instrucción SQL-->
+     <property name="hibernate.format_sql">true</property>
+  </session-factory>
+</hibernate-configuration>
