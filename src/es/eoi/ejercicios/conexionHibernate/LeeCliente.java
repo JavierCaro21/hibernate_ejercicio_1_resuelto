@@ -22,9 +22,6 @@ public class LeeCliente {
             // Leemos el objeto de tipo cliente de nuestra base de datos
             Clientes clienteLeido = miSession.get(Clientes.class, 2);
 
-            //Ahora o bien hacemos commit y lo persistimos en la BBDD o rollback y aquí no ha pasado nada :)
-            miSession.getTransaction().commit();
-
             //Si ha ido bien nos mostrará el mensaje
             System.out.println("Cliente " +  clienteLeido.getNombre() + " obtenido de la base de datos!!");
             System.out.println(clienteLeido);
@@ -32,6 +29,8 @@ public class LeeCliente {
         }catch (Exception e){
             e.printStackTrace();
         } finally {
+            System.out.println("Cerramos sesión y factory");
+            miSession.close();
             miFactory.close();
         }
 

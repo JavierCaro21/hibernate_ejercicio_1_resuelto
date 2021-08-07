@@ -59,3 +59,8 @@ Ahora crearemos una tabla y añadiremos datos a ella desde nuestra aplicación
    - @GeneratedValue(strategy = GenerationType.IDENTITY)
    - Ahora ya recupera el id que acabamos de insertar
  - Creamos una clase similar a guardaCliente pero esta vez que lea
+
+## 4 - Leer lista de clientes con hql
+
+ - Lo primero que debemos hacer es buscar en internet "hibernate hql" y ver qué posibilidades tenemos
+ - creamos una nueva clase LeerClientes e introducimos una query hql para leer los clientes.

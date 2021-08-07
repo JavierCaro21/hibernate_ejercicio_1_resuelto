@@ -40,6 +40,8 @@ public class GuardaCliente {
         }catch (Exception e){
             e.printStackTrace();
         } finally {
+            System.out.println("Cerramos sesión y factory");
+            miSession.close();
             miFactory.close();
         }
 
