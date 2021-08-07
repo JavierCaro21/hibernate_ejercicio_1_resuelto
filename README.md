@@ -64,3 +64,8 @@ Ahora crearemos una tabla y añadiremos datos a ella desde nuestra aplicación
 
  - Lo primero que debemos hacer es buscar en internet "hibernate hql" y ver qué posibilidades tenemos
  - creamos una nueva clase LeerClientes e introducimos una query hql para leer los clientes.
+
+
+## 5 - Eliminar varios de clientes con hql
+
+- creamos una nueva clase EliminarClientes, muy parecida a leerClientes pero esta vez para eliminarlos e introducimos una query hql para eliminar los clientes.
