@@ -21,7 +21,7 @@ Ahora crearemos una tabla y añadiremos datos a ella desde nuestra aplicación
 
  - Lo primero que vamos a hacer es crear una tabla dentro de nuestra base de datos
 
-
+   ```sql
       create table clientes(
          id int primary key auto_increment,
          nombre varchar(50),
@@ -29,12 +29,13 @@ Ahora crearemos una tabla y añadiremos datos a ella desde nuestra aplicación
          edad int,
          direccion varchar(50)
       );
+   ```
 
    - Comprobamos que se ha creado correctamente
 
-
+    ```sql
      show tables;
-
+    ```
  - Ahora necesitamos un fichero de configuración para hibernate
    - Podemos buscar en google un fichero [hibernate.cfg.xml](http://www.cursohibernate.es/doku.php?id=unidades:02_hibernate:03_configurando)
    - Lo copiamos y añadimos a nuestra raiz [src](/src)
@@ -48,9 +49,9 @@ Ahora crearemos una tabla y añadiremos datos a ella desde nuestra aplicación
    - Con un try catch para controlar posibles errores abriremos la sesión y haremos el commit del nuevo cliente
  - Es el momento de ir al a base de datos y comprobar que se ha almacenado correctamente:
 
-
+    ```sql
       select * from clientes;
-
+    ```
 
 ## 3 - Leer datos de la base de datos
 
