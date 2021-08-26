@@ -37,7 +37,7 @@ public class GuardaCliente {
 
             System.out.println(cliente1);
 
-        }catch (Exception e){
+        } catch (Exception e){
             e.printStackTrace();
         } finally {
             System.out.println("Cerramos sesión y factory");
