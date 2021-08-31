@@ -4,7 +4,7 @@
 Haremos una prueba de conexión a la base de datos. Sin utilizar ficheros de configuración ni maven. Directamente con las librerías ORM de Hibernate.
 
  - Descargar librerías Hibernate
-   - Vamos a la web oficial de Hibernate www.hibernate.com
+   - Vamos a la web oficial de Hibernate http://hibernate.org/
    - Hibernate ORM -> Latest stable -> Download Zip archive
    - Utilizaremos solo las que están en lib/required
  - Descargar conector MySQL
